@@ -15,6 +15,6 @@ type: "links"
 ```yaml
 name: 笑的博客
 link: https://blog.xiaow.qzz.io
-avatar: https://img20.360buyimg.com/openfeedback/jfs/t1/308759/22/5559/54956/6839e638Fa1571f19/172f4b7727074acf.jpg
+avatar: http://img.magicalapp.cn/api/image/show/21dc2a2308c039d958fabf4815594f42
 desc: 搞机？我感兴趣的。
 ```
