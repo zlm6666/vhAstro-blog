@@ -58,14 +58,13 @@ export default {
     { text: '昔日', link: '/archives', icon: 'Nav_archives' },
     { text: '留言', link: '/message', icon: 'Nav_message' },
     { text: '关于', link: '/about', icon: 'Nav_about' },
-    { text: 'API', link: 'https://api.vvhan.com/', target: true, icon: 'Nav_link' },
+    { text: '笑的主页',link :'https://xiaow.qzz.io' }
   ],
   // 侧边栏个人网站
   WebSites: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
     { text: 'Github', link: 'https://github.com/uxiaohan', icon: 'WebSite_github' },
-    { text: '韩小韩API', link: 'https://api.vvhan.com', icon: 'WebSite_api' },
     { text: '每日热榜', link: 'https://hot.vvhan.com', icon: 'WebSite_hot' },
     { text: '骤雨重山图床', link: 'https://wp-cdn.4ce.cn', icon: 'WebSite_img' },
     { text: 'HanAnalytics', link: 'https://analytics.vvhan.com', icon: 'WebSite_analytics' },
@@ -91,7 +90,6 @@ export default {
     'https://pagead2.googlesyndication.com'
   ],
   // 博客音乐组件解析接口
-  vhMusicApi: 'https://vh-api.4ce.cn/blog/meting',
   // 评论组件（只允许同时开启一个）
   Comment: {
     // Twikoo 评论
