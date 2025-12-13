@@ -20,12 +20,12 @@ export default {
     "link": "http://www.esoot.com",
     "avatar": "http://img.magicalapp.cn/api/image/show/3558007d7123d61b9b2976887cc1bc35",
     "descr": "收录各种网站"
+    },
     {
     "name": "韩小韩博客",
     "link": "https://www.vvhan.com/",
     "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640",
     "descr": "运气是计划之外的东西."
-    }
     },
   ]
 }
