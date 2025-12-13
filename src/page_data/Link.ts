@@ -14,12 +14,12 @@ export default {
       "link": "https://www.xmhai.cn"
       "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1498934815&s=640"
       "desc": "除了死亡，一切失败都只存在于心理层面."
-    }
+    },
     {
     "name": "易搜特收录网"
     "link": "https://www.esoot.com"
     "avatar": "http://img.magicalapp.cn/api/image/show/3558007d7123d61b9b2976887cc1bc35"
     "desc": "收录各种网站"
-    }
+    },
   ]
 }
