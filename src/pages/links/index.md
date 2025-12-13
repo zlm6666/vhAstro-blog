@@ -13,8 +13,8 @@ type: "links"
 :::
 
 ```yaml
-\"name\": \"笑的博客\"
-\"link\": \"https://blog.xiaow.qzz.io\"
-\"avatar\": \"http://img.magicalapp.cn/api/image/show/21dc2a2308c039d958fabf4815594f42\"
-\"desc\": \"搞机？我感兴趣的。\"
+name: 笑的博客
+link: https://blog.xiaow.qzz.io
+avatar: http://img.magicalapp.cn/api/image/show/21dc2a2308c039d958fabf4815594f42
+desc: 搞机？我感兴趣的。
 ```
