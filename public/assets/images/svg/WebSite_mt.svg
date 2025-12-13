@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-  <!-- 字母 M（仿示例小写m的双峰结构，调整为大写比例） -->
-  <path d="M7 17v-8l2.5 4.5L12 9l2.5 4.5V17"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- 字母 M（窄双峰，压缩宽度至8单位） -->
+  <path d="M5 15l2-6 2 6 2-6 2 6"/>
   
-  <!-- 字母 T（极简横竖线，与M线条粗细一致） -->
-  <path d="M15 9h4M17 9v8"/>
+  <!-- 字母 T（紧邻M，间距仅1单位，宽度4单位） -->
+  <path d="M14 8h4M16 8v8"/>
 </svg>
