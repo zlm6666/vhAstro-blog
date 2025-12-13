@@ -10,10 +10,10 @@ export default {
       "descr": "看看我都干了些啥？"
     },
     {
-      "name": "韩小韩API",
-      "link": "https://api.vvhan.com",
-      "avatar": "https://api.vvhan.com/static/images/logo.webp",
-      "descr": "免费Web API数据接口调用服务平台."
+      "name": "星觅海的博客"
+      "link": "https://www.xmhai.cn"
+      "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1498934815&s=640"
+      "desc": "除了死亡，一切失败都只存在于心理层面."
     }
   ]
 }
