@@ -58,7 +58,7 @@ export default {
     { text: '昔日', link: '/archives', icon: 'Nav_archives' },
     { text: '留言', link: '/message', icon: 'Nav_message' },
     { text: '关于', link: '/about', icon: 'Nav_about' },
-    { text: '笑的主页',link :'https://xiaow.qzz.io',icon: 'Nav_link' }
+    { text: '笑的主页',link :'https://www.xiaow.qzz.io',icon: 'Nav_link' }
   ],
   // 侧边栏个人网站
   WebSites: [
