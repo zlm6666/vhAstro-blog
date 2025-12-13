@@ -4,7 +4,7 @@ export default {
   // 网站地址
   Site: 'https://blog.xiaow.qzz.io',
   // 网站副标题
-  Subtitle: '搞机？我喜欢的。',
+  Subtitle: '热爱分享，共同进步',
   // 网站描述
   Description: '心血来潮，互相学习，相互进步',
   // 网站作者
