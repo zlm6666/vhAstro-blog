@@ -39,5 +39,11 @@ export default {
     "avatar": "https://pic.imgdb.cn/item/65bc52b0871b83018a06699d.png",
     "descr": "分享技术与科技生活"
     },
+    {
+    "name": "青萍叙事",
+    "link": "https://blog.lusyoe.com",
+    "avatar": "https://blog.lusyoe.com/lusyoe-logo.webp",
+    "descr": "一个懂技术的产品汪🐶"
+    },
   ]
 }
