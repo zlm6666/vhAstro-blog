@@ -32,7 +32,7 @@ export default {
     // 其他页面高度
     PageHeight: '28.88rem',
     // 背景
-    background: "url('https://hk.gh-proxy.org/https://raw.githubusercontent.com/zlm6666/vhAstro-Theme/main/public/assets/images/home-banner.webp') no-repeat center 60%/cover",
+    background: "url('https://www.yumus.cn/api/?target=img&brand=bing&ua=pc') no-repeat center 60%/cover",
   },
   // 博客主题配置
   Theme: {
