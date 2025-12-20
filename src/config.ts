@@ -93,12 +93,12 @@ export default {
   Comment: {
     // Twikoo 评论
     Twikoo: {
-      enable: false,
-      envId: ''
+      enable: true,
+      envId: 'https://twikoo.xiaow.qzz.io/'
     },
     // Waline 评论
     Waline: {
-      enable: true,
+      enable: false,
       serverURL: 'https://waline.xiaow.qzz.io'
     }
   },
