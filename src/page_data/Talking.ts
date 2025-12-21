@@ -9,7 +9,7 @@ export default {
       "tags": [
         "日常"
       ],
-      "content": "记录第一条说说"
+      "content": "记录第一条说说<p class=\"vh-img-flex\"><img src=\"https://api.mtyqx.cn/tapi/random.php\"></p>"
     }
       "date": "2025-12-21 08:43:25",
       "tags": [
