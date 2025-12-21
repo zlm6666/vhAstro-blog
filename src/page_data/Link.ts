@@ -45,5 +45,11 @@ export default {
     "avatar": "https://blog.lusyoe.com/lusyoe-logo.webp",
     "descr": "一个懂技术的产品汪🐶"
     },
+    {
+    "name": "BIIBII",
+    "link": "https://www.biibii.cn",
+    "avatar": "https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp",
+    "descr": "记录生活中的技术脉搏。"
+    }
   ]
 }
