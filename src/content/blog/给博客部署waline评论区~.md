@@ -99,7 +99,7 @@ vercel会为你创建一个GitHub仓库
 
 ![设置环境变量](http://img.magicalapp.cn/api/image/show/6d55719d9a0e502db07f2dfe75075cc0)
 
-:::note{type="import"}
+:::note{type="warning"}
    如果你使用 LeanCloud 国内版，请额外配置 `LEAN_SERVER` 环境变量，值为你绑定好的域名。
 :::
  环境变量配置完成之后点击顶部的 `Deployments` 点击顶部最新的一次部署右侧的 `Redeploy` 按钮进行重新部署，就完成了。
@@ -112,7 +112,9 @@ vercel会为你创建一个GitHub仓库
 4. 等待生效，你可以通过自己的域名来访问了
    - 评论系统：example.yourdomain.com
    - 评论管理：example.yourdomain.com/ui
-   
+   :::note{type="import"}
+   如果是用cloudflare绑定的，要关闭“通过cloudflare代理流量”，否则所有评论IP都会显示为`cloudflare`
+   :::
 ## 配置客户端
 
 如果你用的是与我这个博客相同的源码，可以直接在`src/config.ts`里面按提示进行配置，如果不是，请看下面。
