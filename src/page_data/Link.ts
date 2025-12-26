@@ -49,7 +49,13 @@ export default {
     "name": "BIIBII",
     "link": "https://www.biibii.cn",
     "avatar": "https://www.biibii.cn/usr/uploads/2025/07/3155658037.webp",
-    "descr": "记录生活中的技术脉搏。"
+    "descr": "记录生活中的技术脉搏"
+    },
+    {
+    "name": "唯知笔记",
+    "link": "https://note.weizwz.com",
+    "avatar": "https://p.weizwz.com/logo_a4353391cbf0889b.webp",
+    "descr": "探索知识的无限可能"
     },
   ]
 }
