@@ -64,6 +64,7 @@ export default {
   WebSites: [
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
+    { text: '主页', link: 'https://www.xiaow.qzz.io', icon: 'website_home' },
     { text: 'Github', link: 'https://github.com/zlm6666', icon: 'WebSite_github' },
     { text: '哔哩哔哩', link: 'https://m.bilibili.com/space/1309873575', icon: 'WebSite_bili' },
     { text: 'MT论坛', link: 'https://bbs.binmt.cc/home.php?mod=space&uid=139510&do=profile', icon: 'WebSite_mt' },
