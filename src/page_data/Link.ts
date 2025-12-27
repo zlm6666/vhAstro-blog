@@ -16,10 +16,10 @@ export default {
       "descr": "除了死亡，一切失败都只存在于心理层面."
     },
     {
-    "name": "易搜特收录网",
-    "link": "http://www.esoot.com",
-    "avatar": "http://img.magicalapp.cn/api/image/show/3558007d7123d61b9b2976887cc1bc35",
-    "descr": "收录各种网站"
+    "name": "Leyili 花园",
+    "link": "https://lcjlq.com/",
+    "avatar": "https://photo.lcjlq.com/lcj.svg",
+    "descr": "小小后花园～"
     },
     {
     "name": "韩小韩博客",
