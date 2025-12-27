@@ -44,20 +44,21 @@ recommend: true
 
 登录到[vercel](vercel.com)，找到自己的项目设置，添加环境变量
 
+表格有些bug，横屏才能看全
 
  变量名 | 变量值（示例）  | 说明
 ---|---|---
 SMTP_SERVICE  | QQ  | 邮箱服务商，点击[这里](https://github.com/nodemailer/nodemailer/blob/master/lib/well-known/services.json)查看你的邮箱是否支持，若不支持，填后面的
  SMTP_HOST | smtp.qq.com  | SMTP 服务器地址，一般可以在邮箱的设置中找到，不支持上面那个空的时候填
  SMTP_PORT   | 465  | SMTP 服务器端口，一般可以在邮箱的设置中找到，，不支持第一个空的时候填
- SMTP_USER  | 123456789@qq.com  | SMTP 邮件发送服务的用户名，一般为登录邮箱。
+ SMTP_USER  | 123456789&#x40;qq.com  | SMTP 邮件发送服务的用户名，一般为登录邮箱。
  SMTP_PASS  | 你在第一步获得的授权码  | 如果服务商没有授权码提供，则可能是登录密码
 SMTP_SECURE   |  true | 否使用 SSL 连接 SMTP
 SITE_NAME  |  笑的博客 | 网站名称，用于在消息中显示
 SITE_URL  |  https://blog.xiaow.qzz.io | 网站地址，用于在消息中显示
-AUTHOR_EMAIL  | 987654321@qq.com  | 博主邮箱，用来接收新评论通知。如果是博主发布的评论则不进行提醒通知
+AUTHOR_EMAIL  | 987654321&#x40;qq.com  | 博主邮箱，用来接收新评论通知。如果是博主发布的评论则不进行提醒通知
 SENDER_NAME  |  笑-blog | 自定义发送邮件的发件人（选填）
-SENDER_EMAIL  | 123456789@qq.com  |  自定义发送邮件的发件地址，一般与`SMTP_USER`一致（选填，需与`SENDER_NAME`同时填入）
+SENDER_EMAIL  | 123456789&#x40;qq.com  |  自定义发送邮件的发件地址，一般与`SMTP_USER`一致（选填，需与`SENDER_NAME`同时填入）
 
 那么到这里，你就可以顺利接收到邮箱通知了，接下来可以配置一下自定义的模板
 
