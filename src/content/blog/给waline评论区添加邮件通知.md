@@ -33,7 +33,7 @@ recommend: true
 至于resend，好用是挺好用，但是也有几大痛点：无法发送到outlook邮箱（不被信任），waline自带的配置有点问题，需要自己添加smtp服务器。。。
 ---
 **以QQ邮箱为例**
-登录[QQ邮箱网页版](mail.qq.com)，右上角呼出侧边栏，然后点左下角设置，切换到标准版
+登录[QQ邮箱网页版](https://mail.qq.com)，右上角呼出侧边栏，然后点左下角设置，切换到标准版
 ![切换到标准版](http://img.magicalapp.cn/api/image/show/d68728ff7a04f968fec1b068b0348171)
 然后点击左上角设置，点击下方的**账号与安全**，点击设备管理，授权码管理，可以添加授权码（如未启用，请先启用smtp服务），
 
@@ -43,7 +43,7 @@ recommend: true
 
 ### 配置环境变量
 
-登录到[vercel](vercel.com)，找到自己的项目设置，添加环境变量
+登录到[vercel](https://vercel.com)，找到自己的项目设置，添加环境变量
 
 手机版的表格有些bug，横屏才能看全
 
