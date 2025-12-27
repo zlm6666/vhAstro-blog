@@ -46,7 +46,7 @@ recommend: true
 
 登录到[vercel](https://vercel.com)，找到自己的项目设置，添加环境变量
 
-手机版的表格有些bug，横屏才能看全
+手机版的表格有些bug，横屏才能看全，如果显示[email protected]，刷新一下就行了~
 
  变量名 | 变量值（示例）  | 说明
 ---|---|---
