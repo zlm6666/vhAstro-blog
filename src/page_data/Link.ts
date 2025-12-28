@@ -6,7 +6,7 @@ export default {
     {
       "name": "笑的主页",
       "link": "https://xiaow.qzz.io",
-      "avatar": "https://img20.360buyimg.com/openfeedback/jfs/t1/308759/22/5559/54956/6839e638Fa1571f19/172f4b7727074acf.jpg",
+      "avatar": "https://wp-cdn.4ce.cn/v2/TVFIv5x.jpeg",
       "descr": "看看我都干了些啥？"
     },
     {
