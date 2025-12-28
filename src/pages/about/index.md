@@ -4,6 +4,7 @@ h1: "关于我"
 desc: "hi!im xiao"
 layout: "@/layouts/PageLayout/PageLayout.astro"
 type: "about"
+comment: false
 ---
 
 :::note{type="success"}
