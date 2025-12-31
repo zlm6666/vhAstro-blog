@@ -16,9 +16,9 @@ recommend: true
 
 之前我教过大家如何搭建**vhAstro-Theme**博客，以及给这个博客配置waline评论区和waline邮件通知（*具体可以看我历史文章*），那现在我就来教大家，如何优化自己的博客，分为以下两个方面
 
- <a href="#圈子功能api化" target="_self">1.**圈子**功能api化</a> 
+<a href="#圈子功能api化" target="_self">1.**圈子**功能api化</a>
 
- <a href="#动态功能api化" target="_self">2.**动态**功能api化</a> 
+<a href="#动态功能api化" target="_self">2.**动态**功能api化</a>
 
 > 至于友链功能为什么不弄。。。因为感觉没必要
 
@@ -47,7 +47,7 @@ const parser = new Parser({
   headers: { 'User-Agent': 'RSS-Aggregator-API/1.0' }
 });
 
-// 添加原时，记得不要缺了逗号
+// 添加rss时，记得不要缺了逗号
 const DEFAULT_FEEDS = [
   'https://blog.xiaow.qzz.io/rss.xml',
   // 可继续添加更多 RSS 源
@@ -116,7 +116,7 @@ exports.handler = async function(event, context) {
       let auther = '未知作者';
       if (article.author) auther = article.authorr;
     //  else if (article.creator) auther = article.creator;
-     // else if (article['dc:creator']) auther = article['dc:creator'];//暂时弃用这两条，启用直接删两个注释符号，然后第一个if等号后面，删掉最后一个r就行
+     // else if (article['dc:creator']) auther = article['dc:creator'];//暂时弃用这两条，要启用的话直接删上面两个注释符号，然后第一个if等号后面，删掉最后一个r就行
       else if (typeof article.source === 'string') auther = article.source;
       else if (article.sourceFeedTitle) auther = article.sourceFeedTitle; // 取来源feed的title
       auther = cleanText(auther).substring(0, 50); // 清理并截断
