@@ -263,6 +263,7 @@ exports.handler = async (event, context) => {
         };
 
         // 1. 获取API数据
+        // 下面的qqid换成你的QQ号
         const apiUrl = 'https://api.mmp.cc/api/talk?uin=qqid';
         const response = await fetch(apiUrl);
         const data = await response.json();
