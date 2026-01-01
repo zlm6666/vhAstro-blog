@@ -19,7 +19,6 @@ export async function GET(context: any) {
 	});
 	// 添加 XML 样式表指令
 	const xmlHead = '<?xml version="1.0" encoding="UTF-8"?>';
-	const xmlMain = res.replace(xmlHead, `${xmlHead}<?xml-stylesheet type="text/xsl" href="/rss.xsl" ?>`);
-	// .replace(/\/<\/link>/g, '</link>');
+	const xmlMain = res.replace(xmlHead, `${xmlHead}<?xml-stylesheet type="text/xsl" href="/rss.xsl" ?>`).replace(/\/<\/link>/g, '</link>');
 	return new Response(xmlMain, { headers: { 'Content-Type': 'application/xml' } });
 }
