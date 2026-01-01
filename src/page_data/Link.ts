@@ -64,10 +64,10 @@ export default {
     "descr": "博客人的朋友圈，将一个个散落在各处的孤岛连接成一片广袤无垠的新大陆！"
     },
     {
-    "name": "笑呀",
-    "link": "https://voderl.cn",
-    "avatar": "https://voderl.cn/avatar.jpg",
-    "descr": "走过的路总是一年四季都会有开花的树"
+    "name": "EdgeCatの小窝",
+    "link": "https://catp.cc",
+    "avatar": "https://file.catp.cc/avatar.png",
+    "descr": "说时依旧，有泪如倾"
     },
   ]
 }
