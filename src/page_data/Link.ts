@@ -81,5 +81,11 @@ export default {
     "avatar": "https://blog.adproqwq.top/avatar.png",
     "descr": "Aone的Blog，可能有有用的东西？"
     },
+    {
+    "name": "芹香のblog",
+    "link": "https://blog.serikawa.top",
+    "avata": "https://imgs.977958.xyz/uploads//684dac2732bba_.jpg",
+    "descr": "芹香のblog，一个游戏站点兼信息技术交流小站，欢迎来玩♡"
+    },
   ]
 }
