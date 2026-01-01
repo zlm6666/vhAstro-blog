@@ -30,7 +30,7 @@ export default {
     {
     "name": "Web Teleporter",
     "link": "https://webteleporter.top/",
-    "avatar": "https://webteleporter.top/img/logo.png",
+    "avatar": "http://img.magicalapp.cn/api/image/show/928a82921b6c925d7f21c132333881a0",
     "descr": "独立博客传送门"
     },
     {
