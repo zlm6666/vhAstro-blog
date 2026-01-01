@@ -69,5 +69,11 @@ export default {
     "avatar": "https://file.catp.cc/avatar.png",
     "descr": "说时依旧，有泪如倾"
     },
+    {
+    "name": "速溶理查",
+    "link": "https://gateway.xn--sjq13yo4by51ezbkoum.dpdns.org",
+    "avatar": "https://img.moonisland.dpdns.org/Astro/avatarImg.webp",
+    "descr": "人与人之间的社交无过于对彼此世界的入侵"
+    },
   ]
 }
