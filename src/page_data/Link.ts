@@ -75,5 +75,11 @@ export default {
     "avatar": "https://wp-cdn.4ce.cn/v2/pG7yHIn.png",
     "descr": "人与人之间的社交无过于对彼此世界的入侵"
     },
+    {
+    "name": "AoneのBlog",
+    "link": "https://blog.adproqwq.top",
+    "avatar": "https://blog.adproqwq.top/avatar.png",
+    "descr": "Aone的Blog，可能有有用的东西？"
+    },
   ]
 }
