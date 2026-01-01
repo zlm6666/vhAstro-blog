@@ -14,7 +14,7 @@ recommend: true
 ---
 ## 前言&目录
 
-之前我教过大家如何搭建**vhAstro-Theme**博客，以及给这个博客配置waline评论区和waline邮件通知（*具体可以看我历史文章*），那现在我就来教大家，如何优化自己的博客，分为以下两个方面
+之前我教过大家如何搭建[**vhAstro-Theme**博客](https://blog.xiaow.qzz.io/article/astro-theme-blog)，以及给这个博客配置waline评论区和waline邮件通知（*具体可以看我历史文章*），那现在我就来教大家，如何优化自己的博客，分为以下两个方面
 
 <a href="#圈子功能api化" target="_self">1.**圈子**功能api化</a>
 
