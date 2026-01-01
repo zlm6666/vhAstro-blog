@@ -35,7 +35,7 @@ export default defineConfig({
 	Compress({ Image: false, Action: { Passed: async () => true } }),
 	sitemap({
 		// 处理末尾带 / 的 url
-		serialize: (item) => ({ ...item, url: item.url.endsWith('/') ? item.url.slice(0, -1) : item.url })
+		serialize: (item) => ({ ...item, url: item.url.endsWith('/') ? item.url : item.url + '/' })
 	}),
 	mdx({ extendMarkdownConfig: false }),
 	Compressor({ gzip: false, brotli: true, fileExtensions: [".html", ".css", ".js"] })
