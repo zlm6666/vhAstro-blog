@@ -93,5 +93,11 @@ export default {
     "avatar": "https://launchpadx.top/avatar",
     "descr": "用代码改变世界"
     },
+    {
+    "name": "酷小呵资源站",
+    "link": "https://kuhehe.kuhehe.top",
+    "avatar": "https://bu.dusays.com/2025/01/31/679c9acae2452.webp",
+    "descr": "每天偶尔分享不错资源"
+    },
   ]
 }
