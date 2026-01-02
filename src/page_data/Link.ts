@@ -84,7 +84,7 @@ export default {
     {
     "name": "芹香のblog",
     "link": "https://blog.serikawa.top",
-    "avata": "https://imgs.977958.xyz/uploads//684dac2732bba_.jpg"http://img.magicalapp.cn/api/image/show/49c9a700bca64cf1a1b9b3709be8bfc8",
+    "avata": "http://img.magicalapp.cn/api/image/show/49c9a700bca64cf1a1b9b3709be8bfc8",
     "descr": "芹香のblog，一个游戏站点兼信息技术交流小站，欢迎来玩♡"
     },
     {
