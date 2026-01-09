@@ -99,5 +99,11 @@ export default {
     "avatar": "https://bu.dusays.com/2025/01/31/679c9acae2452.webp",
     "descr": "每天偶尔分享不错资源"
     },
+    {
+    "name": "博客说",
+    "link": "https://blogtalk.org",
+    "avatar": "https://www.boyouquan.com/assets/images/sites/logo/logo-small.png",
+    "descr": "中文独立博客收录与文章 RSS 聚合网站。"
+    },
   ]
 }
