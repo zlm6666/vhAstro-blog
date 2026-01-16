@@ -8,6 +8,7 @@ tags:
   - 博客
 id: waline-deploy-course
 date: 2025-12-21 10:09:46
+updated: 2026-01-16 7:20:42
 cover: "http://img.magicalapp.cn/api/image/show/ce083b1ce217a8f707aaf33a1851364b"
 recommend: true
 ---
@@ -18,15 +19,17 @@ recommend: true
 ## 目录
 <a href="#waline概述" target="_self">1.waline概述</a>
 
-<a href="#后端配置" target="_self">2.后端配置</a>
+<a href="#服务端部署" target="_self">2.服务端部署（使用vercel）</a>
 
-<a href="#服务端部署" target="_self">3.服务端部署（使用vercel）</a>
+<a href="#配置数据库" target="_self">3.配置数据库</a>
 
 <a href="#配置客户端" target="_self">4.客户端配置</a>
 
 <a href="#评论管理" target="_self">5.管理员注册</a>
 
 <a href="#视频教程" target="_self">6.视频教程（来自其他up主）</a>
+
+<a href="#更新方式" target="_self">7.如何更新</a>
 
 ## waline概述
 
@@ -55,27 +58,6 @@ recommend: true
 - 通过 <1kb 代码可靠统计文章浏览量
 
 
-## 后端配置
-
-后端会使用**leancloud**服务
-1. [登录](https://console.leancloud.app/login) 或 [注册](https://console.leancloud.app/register) `LeanCloud 国际版` 并进入 [控制台](https://console.leancloud.app/apps)
-2. 点击左上角 [创建应用](https://console.leancloud.app/apps) 并起一个你喜欢的名字 (请选择免费的开发版):
-![创建应用](http://img.magicalapp.cn/api/image/show/b07570145c351554e6d5b69f4cc32f1d)
-3. 进入应用，选择左下角的 `设置` > `应用 Key`。你可以看到你的 `APP ID`,`APP Key` 和 `Master Key`。请记录它们，以便后续使用（手机桌面是右上角三条杠可以看到）
-![key](http://img.magicalapp.cn/api/image/show/69b5f70337bf00894188062d22c77888)
-接下来我们先把它晾着，看后面的
-:::note{type="warning"}
-**国内版需要备案**
-
-如果你正在使用 Leancloud 国内版 ([leancloud.cn](https://leancloud.cn))，我们推荐你切换到国际版 ([leancloud.app](https://leancloud.app))。否则，你需要为应用额外绑定**已备案**的域名，同时购买独立 IP 并完成备案接入:
-
-- 登录国内版并进入需要使用的应用
-- 选择 `设置` > `域名绑定` > `API 访问域名` > `绑定新域名` > 输入域名 > `确定`。
-- 按照页面上的提示按要求在 DNS 上完成 CNAME 解析。
-- 购买独立 IP 并提交工单完成备案接入。(独立 IP 目前价格为 ￥ 50/个/月)
-![设置域名](http://img.magicalapp.cn/api/image/show/f30a97728b9b1f43a27f456519c7ba0c)
-:::
-
 ## 服务端部署
 使用vercel实现
 
@@ -86,24 +68,104 @@ recommend: true
 vercel会为你创建一个GitHub仓库
 :::
 
-### 配置环境变量
+## 配置数据库
 
-点击顶部的 `Settings` - `Environment Variables` 进入环境变量配置页，并配置三个环境变量（变量名和变量值见下）
-
-
-| 变量名           | 变量值                                 |
-|------------------|----------------------------------------|
-| LEAN_ID          | 你刚刚在 LeanCloud 获得的 APP ID       |
-| LEAN_KEY         | 你刚刚在 LeanCloud 获得的 APP KEY      |
-| LEAN_MASTER_KEY  | 你刚刚在 LeanCloud 获得的 Master Key   |
-
-![设置环境变量](http://img.magicalapp.cn/api/image/show/6d55719d9a0e502db07f2dfe75075cc0)
-
-:::note{type="warning"}
-   如果你使用 LeanCloud 国内版，请额外配置 `LEAN_SERVER` 环境变量，值为你绑定好的域名。
+:::note{type="error"}
+原本使用的`leancloud`即将停止服务，请使用下面的新方案
 :::
- 环境变量配置完成之后点击顶部的 `Deployments` 点击顶部最新的一次部署右侧的 `Redeploy` 按钮进行重新部署，就完成了。
- 
+
+1. 点击顶部的`Storage`进入存储服务配置页，选择`Create Database`创建数据库。`Marketplace Database Providers`数据库服务选择`Neon`，点击`Continue`进行下一步。（按图点击）
+
+![创建数据库](http://img.magicalapp.cn/api/image/show/ba2952b6b6f4469765210c0a813ccf62)
+
+2. 此时会让你创建一个`Neno`账号，此时选择 `Accept and Create`接受并创建。后续选择数据库的套餐配置，包括地区和额度（默认免费套餐，USA 东部地区）。这里可以什么都不操作直接选择`Continue`下一步。
+
+![创建账号](http://img.magicalapp.cn/api/image/show/5006a3e61b58da2ecc50896afa8afb7b)
+
+3. 然后取一个你喜欢的名称，下一步
+
+4. 这时候`Storage`下就有你创建的数据库服务了，点击进去选择`Open in Neon`跳转到`Neon`。在`Neon`界面左侧选择`SQL Editor`，将下面的代码粘贴进编辑器中，点击`Run`执行创建表操作。（按图操作）
+```
+CREATE SEQUENCE wl_comment_seq;
+
+CREATE TABLE wl_comment (
+  id int check (id > 0) NOT NULL DEFAULT NEXTVAL ('wl_comment_seq'),
+  user_id int DEFAULT NULL,
+  comment text,
+  insertedAt timestamp(0) without time zone NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  ip varchar(100) DEFAULT '',
+  link varchar(255) DEFAULT NULL,
+  mail varchar(255) DEFAULT NULL,
+  nick varchar(255) DEFAULT NULL,
+  pid int DEFAULT NULL,
+  rid int DEFAULT NULL,
+  sticky numeric DEFAULT NULL,
+  status varchar(50) NOT NULL DEFAULT '',
+  "like" int DEFAULT NULL,
+  ua text,
+  url varchar(255) DEFAULT NULL,
+  createdAt timestamp(0) without time zone NULL DEFAULT CURRENT_TIMESTAMP,
+  updatedAt timestamp(0) without time zone NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+) ;
+
+
+CREATE SEQUENCE wl_counter_seq;
+
+CREATE TABLE wl_counter (
+  id int check (id > 0) NOT NULL DEFAULT NEXTVAL ('wl_counter_seq'),
+  time int DEFAULT NULL,
+  reaction0 int DEFAULT NULL,
+  reaction1 int DEFAULT NULL,
+  reaction2 int DEFAULT NULL,
+  reaction3 int DEFAULT NULL,
+  reaction4 int DEFAULT NULL,
+  reaction5 int DEFAULT NULL,
+  reaction6 int DEFAULT NULL,
+  reaction7 int DEFAULT NULL,
+  reaction8 int DEFAULT NULL,
+  url varchar(255) NOT NULL DEFAULT '',
+  createdAt timestamp(0) without time zone NULL DEFAULT CURRENT_TIMESTAMP,
+  updatedAt timestamp(0) without time zone NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+) ;
+
+
+CREATE SEQUENCE wl_users_seq;
+
+CREATE TABLE wl_users (
+  id int check (id > 0) NOT NULL DEFAULT NEXTVAL ('wl_users_seq'),
+  display_name varchar(255) NOT NULL DEFAULT '',
+  email varchar(255) NOT NULL DEFAULT '',
+  password varchar(255) NOT NULL DEFAULT '',
+  type varchar(50) NOT NULL DEFAULT '',
+  label varchar(255) DEFAULT NULL,
+  url varchar(255) DEFAULT NULL,
+  avatar varchar(255) DEFAULT NULL,
+  github varchar(255) DEFAULT NULL,
+  twitter varchar(255) DEFAULT NULL,
+  facebook varchar(255) DEFAULT NULL,
+  google varchar(255) DEFAULT NULL,
+  weibo varchar(255) DEFAULT NULL,
+  qq varchar(255) DEFAULT NULL,
+  oidc varchar(255) DEFAULT NULL,
+  "2fa" varchar(32) DEFAULT NULL,
+  createdAt timestamp(0) without time zone NULL DEFAULT CURRENT_TIMESTAMP,
+  updatedAt timestamp(0) without time zone NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+) ;
+```
+
+![open in neon](http://img.magicalapp.cn/api/image/show/231230d09092e5fe40276f8d37ad3f0a)
+
+![粘贴代码](http://img.magicalapp.cn/api/image/show/8aacd69cb34f5b1984fdfd43e90da275)
+
+5. 稍等片刻之后会告知你创建成功。然后回到vercel，更新部署，让配置生效（点击顶部的 `Deployments` 点击顶部最新的一次部署右侧的 `Redeploy` 按钮进行重新部署，就完成了。）
+
+![更新部署](http://img.magicalapp.cn/api/image/show/cd7cf3b3a07cf7fd32b27f4448974a46)
+
+等待部署完成就好了~
+
 > vercel国内速度较慢，建议绑定自己的域名
 > 没有域名的可以看[免费域名](https://blog.xiaow.qzz.io/article/free-domain-name-dpdns)
 1. 点击顶部的 `Settings` - `Domains` 进入域名配置页
@@ -153,11 +215,25 @@ vercel会为你创建一个GitHub仓库
 3. 用户也可通过评论框注册账号，登陆后会跳转到自己的档案页。
 
 ## 视频教程
-来自其他up主的教程
+来自其他up主的教程，版本较老，仅供参考，配置数据库的部分以本帖子为准
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://player.bilibili.com/player.html?bvid=1pB4y1E7fp&quality=16" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0" allowfullscreen></iframe></div>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"><iframe src="https://player.bilibili.com/player.html?bvid=1NF411y7eP&quality=16" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" frameborder="0" allowfullscreen></iframe></div>
+
+## 更新方式
+使用faq，在github仓库中找到`package.json`，里面的内容默认是
+```json
+{
+  "name": "template",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@waline/vercel": "latest"
+  }
+}
+```
+本来是会自动适配新版本的，但是如果没有自动适配的话，就可以手动更改，先在浏览器登录你部署的waline，它会提示最新版本是哪个，比如说他提示我的`@waline/vercel:1.35.0`，那我就把里面的`latest`换成`^1.35.0`，其中`^`意思是自动适配小版本更新
 
 ## 结语
 没啥好说的，其实教程已经非常详细了，按照教程一步一步来都能成功，只要不乱改，出事了就是waline或者leancloud的锅(doge
