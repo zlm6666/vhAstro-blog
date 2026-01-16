@@ -85,7 +85,7 @@ vercel会为你创建一个GitHub仓库
 3. 然后取一个你喜欢的名称，下一步
 
 4. 这时候`Storage`下就有你创建的数据库服务了，点击进去选择`Open in Neon`跳转到`Neon`。在`Neon`界面左侧选择`SQL Editor`，将下面的代码粘贴进编辑器中，点击`Run`执行创建表操作。（按图操作）
-```
+```sql
 CREATE SEQUENCE wl_comment_seq;
 
 CREATE TABLE wl_comment (
