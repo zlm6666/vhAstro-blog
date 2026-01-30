@@ -105,5 +105,11 @@ export default {
     "avatar": "https://www.boyouquan.com/assets/images/sites/logo/logo-small.png",
     "descr": "中文独立博客收录与文章 RSS 聚合网站。"
     },
+    {
+    "name": "由 · 樂鸢 - 鸢尾之羽，长久思念",
+    "link": "https://www.rliy.cn",
+    "avatar": "https://www.rliy.cn/upload/logo.png",
+    "descr": "由 · 樂鸢 - 鸢尾之羽，长久思念，一个兴趣使然的小站，只为偶尔分享生活的点滴，By：鸢羽rliy_"
+    },
   ]
 }
