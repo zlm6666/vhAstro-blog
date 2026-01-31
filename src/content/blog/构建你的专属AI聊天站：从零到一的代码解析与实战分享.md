@@ -11,7 +11,7 @@ recommend: true
 ## 引言
 本文将深度解析一款基于现代Web技术构建的AI聊天应用，完整展示从界面设计到核心功能的实现细节。通过剖析代码架构与关键技术选型，为你打造个性化聊天机器人提供完整的技术蓝图。
 
-::btn[下载源码]{link="https://wwwk.qyshare.com:2083/s/gzmt6p"}
+::btn[下载源码]{link="https://wwwk.qyshare.com:2083/s/gzmt6p" type="info"}
 
 ::btn[演示地址]{link="https://www.xiaow.qzz.io/aichat" type="success"}
 
