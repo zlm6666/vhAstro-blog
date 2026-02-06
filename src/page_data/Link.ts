@@ -117,5 +117,11 @@ export default {
     "avatar": "https://serve.giovan.cn/uploads/1769860396165-143ef0bb240aa25d.jpeg",
     "descr": "万事顺意"
     },
+    {
+    "name": "James 的小站",
+    "link": "https://nasliangjian.mycloudnas.com:4443/",
+    "avatar": "https://nasliangjian.mycloudnas.com:4443/wp-content/uploads/2025/04/0e383817b97bb4b039167eff67c8f529.jpeg",
+    "descr": "80 后程序猿，兴趣广泛，每样都不精通～～"
+    },
   ]
 }
