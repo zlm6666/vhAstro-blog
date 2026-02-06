@@ -111,5 +111,11 @@ export default {
     "avatar": "https://www.rliy.cn/upload/logo.png",
     "descr": "由 · 樂鸢 - 鸢尾之羽，长久思念，一个兴趣使然的小站，只为偶尔分享生活的点滴，By：鸢羽rliy_"
     },
+    {
+    "name": "Giovan",
+    "link": "https://www.giovan.cn",
+    "avatar": "https://serve.giovan.cn/uploads/1769860396165-143ef0bb240aa25d.jpeg",
+    "descr": "万事顺意"
+    },
   ]
 }
