@@ -120,7 +120,7 @@ export default {
     {
     "name": "James 的小站",
     "link": "https://nasliangjian.mycloudnas.com:4443/",
-    "avatar": "https://nasliangjian.mycloudnas.com:4443/wp-content/uploads/2025/04/0e383817b97bb4b039167eff67c8f529.jpeg",
+    "avatar": "http://img.magicalapp.cn/api/image/show/68e37fe577fa141daab7cc6de8cd7a12",
     "descr": "80 后程序猿，兴趣广泛，每样都不精通～～"
     },
     {
