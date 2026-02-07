@@ -126,7 +126,7 @@ export default {
     {
     "name": "宇外御风的hexo博客",
     "link": "https://www.20010501.xyz",
-    "avatar": "https://www.20010501.xyz/fl",
+    "avatar": "https://www.20010501.xyz/fluid.png",
     "descr": "分享免费有趣的知识"
     },
   ]
