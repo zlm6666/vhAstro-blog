@@ -123,5 +123,11 @@ export default {
     "avatar": "https://nasliangjian.mycloudnas.com:4443/wp-content/uploads/2025/04/0e383817b97bb4b039167eff67c8f529.jpeg",
     "descr": "80 后程序猿，兴趣广泛，每样都不精通～～"
     },
+    {
+    "name": "宇外御风的hexo博客",
+    "link": "https://www.20010501.xyz",
+    "avatar": "https://www.20010501.xyz/fl",
+    "descr": "分享免费有趣的知识"
+    },
   ]
 }
