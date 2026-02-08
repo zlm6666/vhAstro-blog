@@ -129,5 +129,12 @@ export default {
     "avatar": "https://www.20010501.xyz/fluid.png",
     "descr": "分享免费有趣的知识"
     },
+    {
+    "name": "笑呀",
+    "link": "https://voderl.cn/",
+    "avatar": "https://voderl.cn/avatar.jpg",
+    "descr": "走过的路总是一年四季都会有开花的树"
+    },
+    
   ]
 }
