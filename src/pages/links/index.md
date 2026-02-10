@@ -16,6 +16,6 @@ type: "links"
 name: 笑的博客
 link: https://blog.xiaow.qzz.io
 avatar: https://wp-cdn.4ce.cn/v2/TVFIv5x.jpeg
-descr: 热爱分享，共同进步
+descr: 随性收拢生活散落的笑意，与同路人漫谈成长微澜。
 rss: https://blog.xiaow.qzz.io/rss.xml
 ```
