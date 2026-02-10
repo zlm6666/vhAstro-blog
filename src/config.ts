@@ -19,8 +19,8 @@ export default {
   Tips: '<p>欢迎光临我的博客 🎉</p><p>这里会分享我的日常和学习中的收集、整理及总结，希望能对你有所帮助:) 💖</p>',
   // 首页打字机文案列表
   TypeWriteList: [
-    '笑纹里藏着星屑，每道都是未说出口的光，织成岁月的软甲',
-    "Laughter lines etch stardust on time's face, each crease a whisper of light that weaves into life's soft armor.",
+    '笑为光，照岁痕，见未改心',
+    "Laughter as light, shining years, seeing unchanged heart.",
   ],
   // 网站创建时间
   CreateTime: '2025-12-07',
