@@ -135,6 +135,11 @@ export default {
     "avatar": "https://voderl.cn/avatar.jpg",
     "descr": "走过的路总是一年四季都会有开花的树"
     },
-    
+    {
+    "name": "王苏洋Blog",
+    "link": "https://www.wsyblog.cn/",
+    "avatar": "https://www.wsyblog.cn/upload/IMG_8745.jpeg",
+    "descr": "一个爱折腾的普通人"
+    },
   ]
 }
