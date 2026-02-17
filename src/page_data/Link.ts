@@ -141,5 +141,11 @@ export default {
     "avatar": "https://www.wsyblog.cn/upload/IMG_8745.jpeg",
     "descr": "一个爱折腾的普通人"
     },
+    {
+    "name": "语初博客",
+    "link": "https://www.yc520.top/",
+    "avatar": "https://nos.netease.com/ysf/418f5432ddf74580b032c9e5528b5467.jpg",
+    "descr": "坚持搜集网络资源"
+    },
   ]
 }
