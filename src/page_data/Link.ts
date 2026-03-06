@@ -147,5 +147,11 @@ export default {
     "avatar": "https://nos.netease.com/ysf/418f5432ddf74580b032c9e5528b5467.jpg",
     "descr": "坚持搜集网络资源"
     },
+    {
+    "name": "JerryGao’s Blog",
+    "link": "https://www.jerrygao.cn/",
+    "avatar": "https://www.jerrygao.cn/icons/icon-512.png",
+    "descr": "爱折腾的安全小白"
+    },
   ]
 }
