@@ -66,7 +66,7 @@ export default {
     {
     "name": "EdgeCatの小窝",
     "link": "https://catp.cc",
-    "avatar": "https://file.catp.cc/avatar.png",
+    "avatar": "https://img.tucang.cc/api/image/show/93fc67e5d988bf02a811f2d0cce338a9",
     "descr": "说时依旧，有泪如倾"
     },
     {
