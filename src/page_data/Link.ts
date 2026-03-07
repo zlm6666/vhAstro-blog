@@ -131,7 +131,7 @@ export default {
     },
     {
     "name": "笑呀",
-    "link": "https://voderl.cn/",
+    "link": "http://voderl.cn/",
     "avatar": "https://img.tucang.cc/api/image/show/983e7ba463896a26c4f1a35f142a8ed5",
     "descr": "走过的路总是一年四季都会有开花的树"
     },
