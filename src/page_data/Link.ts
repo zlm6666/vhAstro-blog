@@ -119,9 +119,9 @@ export default {
     },
     {
     "name": "James 的小站",
-    "link": "https://nasliangjian.mycloudnas.com:4443/",
+    "link": "https://nasliangjian.mycloudnas.com:4443",
     "avatar": "http://img.magicalapp.cn/api/image/show/68e37fe577fa141daab7cc6de8cd7a12",
-    "descr": "80 后程序猿，兴趣广泛，每样都不精通～～"
+    "descr": "80后程序猿，兴趣广泛，每样都不精通～～"
     },
     {
     "name": "宇外御风的hexo博客",
