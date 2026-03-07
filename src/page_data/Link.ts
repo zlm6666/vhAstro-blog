@@ -138,7 +138,7 @@ export default {
     {
     "name": "王苏洋Blog",
     "link": "https://www.wsyblog.cn/",
-    "avatar": "https://www.wsyblog.cn/upload/IMG_8745.jpeg",
+    "avatar": "https://img.tucang.cc/api/image/show/1765a019049532e3203f05055b1b7348",
     "descr": "一个爱折腾的普通人"
     },
     {
