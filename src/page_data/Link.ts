@@ -153,5 +153,11 @@ export default {
     "avatar": "https://www.jerrygao.cn/icons/icon-512.png",
     "descr": "爱折腾的安全小白"
     },
+    {
+    "name": "小破站",
+    "link": "https://blog.lvjianqing.xyz/",
+    "avatar": "https://wp-cdn.4ce.cn/v2/lnZZwdw.jpeg",
+    "descr": "内容一般，热爱很满."
+    },
   ]
 }
