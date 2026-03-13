@@ -10,7 +10,7 @@ tags:
   - 网站分析
 
 id: "han-analytics"
-cover: "http://img.magicalapp.cn/api/image/show/550fd6f327c6d403be01501c5d9de909"
+cover: "http://img.tucang.cc/api/image/show/550fd6f327c6d403be01501c5d9de909"
 recommend: true
 ---
 
