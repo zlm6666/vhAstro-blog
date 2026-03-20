@@ -40,7 +40,7 @@ export default {
     "descr": "分享技术与科技生活"
     },
     {
-    "name": "青萍叙事",
+    "name": "\u9752\u840d\u53d9\u4e8b",
     "link": "https://blog.lusyoe.com",
     "avatar": "https://blog.lusyoe.com/lusyoe-logo.webp",
     "descr": "一个懂技术的产品汪🐶"
