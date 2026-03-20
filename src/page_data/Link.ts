@@ -17,8 +17,8 @@ export default {
     },
     {
     "name": "Leyili 花园",
-    "link": "https://lcjlq.com/",
-    "avatar": "http://img.magicalapp.cn/api/image/show/48b4b02db42d03a5f1151a6a153a3680",
+    "link": "https://blog.930309.xyz/",
+    "avatar": "http://img.tucang.cc/api/image/show/48b4b02db42d03a5f1151a6a153a3680",
     "descr": "小小后花园～"
     },
     {
