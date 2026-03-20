@@ -17,19 +17,19 @@ export default {
     },
     {
     "name": "Leyili 花园",
-    "link": "https://blog.930309.xyz/",
+    "link": "https://blog.930309.xyz",
     "avatar": "http://img.tucang.cc/api/image/show/48b4b02db42d03a5f1151a6a153a3680",
     "descr": "小小后花园～"
     },
     {
     "name": "韩小韩博客",
-    "link": "https://www.vvhan.com/",
+    "link": "https://www.vvhan.com",
     "avatar": "https://q1.qlogo.cn/g?b=qq&nk=1655466387&s=640",
     "descr": "运气是计划之外的东西."
     },
     {
     "name": "Web Teleporter",
-    "link": "https://webteleporter.top/",
+    "link": "https://webteleporter.top",
     "avatar": "http://img.magicalapp.cn/api/image/show/928a82921b6c925d7f21c132333881a0",
     "descr": "独立博客传送门"
     },
@@ -109,7 +109,7 @@ export default {
     "name": "由 · 樂鸢 - 鸢尾之羽，长久思念",
     "link": "https://www.rliy.cn",
     "avatar": "https://www.rliy.cn/upload/logo.png",
-    "descr": "由 · 樂鸢 - 鸢尾之羽，长久思念，一个兴趣使然的小站，只为偶尔分享生活的点滴，By：鸢羽rliy_"
+    "descr": "一个兴趣使然的小站，只为偶尔分享生活的点滴，By：鸢羽rliy_"
     },
     {
     "name": "Giovan",
@@ -131,31 +131,31 @@ export default {
     },
     {
     "name": "笑呀",
-    "link": "http://voderl.cn/",
+    "link": "http://voderl.cn",
     "avatar": "https://img.tucang.cc/api/image/show/983e7ba463896a26c4f1a35f142a8ed5",
     "descr": "走过的路总是一年四季都会有开花的树"
     },
     {
     "name": "王苏洋Blog",
-    "link": "https://www.wsyblog.cn/",
+    "link": "https://www.wsyblog.cn",
     "avatar": "https://img.tucang.cc/api/image/show/1765a019049532e3203f05055b1b7348",
     "descr": "一个爱折腾的普通人"
     },
     {
     "name": "语初博客",
-    "link": "https://www.yc520.top/",
+    "link": "https://www.yc520.top",
     "avatar": "https://nos.netease.com/ysf/418f5432ddf74580b032c9e5528b5467.jpg",
     "descr": "坚持搜集网络资源"
     },
     {
     "name": "JerryGao’s Blog",
-    "link": "https://www.jerrygao.cn/",
+    "link": "https://www.jerrygao.cn",
     "avatar": "https://www.jerrygao.cn/icons/icon-512.png",
     "descr": "爱折腾的安全小白"
     },
     {
     "name": "小破站",
-    "link": "https://blog.lvjianqing.xyz/",
+    "link": "https://blog.lvjianqing.xyz",
     "avatar": "https://wp-cdn.4ce.cn/v2/lnZZwdw.jpeg",
     "descr": "内容一般，热爱很满."
     },
