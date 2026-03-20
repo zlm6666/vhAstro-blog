@@ -43,7 +43,7 @@ export default {
     "name": "青萍叙事",
     "link": "https://blog.lusyoe.com",
     "avatar": "https://blog.lusyoe.com/lusyoe-logo.webp",
-    "descr": "一个懂技术的产品汪"
+    "descr": "一个懂技术的产品汪🐶"
     },
     {
     "name": "BIIBII",
