@@ -12,8 +12,11 @@ cover: "https://img.tucang.cc/api/image/show/2859f26f38a901982ed62ccf25c55e96"
 recommend: true
 ---
 ## 前言
+
 好了，隔了这么久也是又来更新了，这里也是带来termux安装blutter的教程，封面图是AI生成的，挺雷霆吧😂
+
 ### 目录
+
 <a href="#blutter功能" target="_self">**1.blutter功能**</a>
 
 <a href="#更换快速镜像" target="_self">**2.更换快速镜像**</a>
@@ -21,14 +24,15 @@ recommend: true
 <a href="#安装教程" target="_self">**3.安装教程**</a>
 
 <a href="#使用教程" target="_self">**4.使用教程**</a>
+
 ## blutter功能
 
 为什么要安装blutter？因为当我们逆向分析flutter软件时，他的代码不是在dex文件里，而是被藏在了`libapp.so`里，我们需要把这玩意儿给他解密出来，便于我们进行逆向分析
 
 ## 更换快速镜像
-
+:::note
 因为termux在国内的网络有些玄学，建议更换国内镜像，更快一点，首先下载安装termux我就不再多说了，自己去官网或者GitHub下载安装就行
-
+:::
 安装后先输入
 ```bash
 termux-change-repo
