@@ -101,3 +101,12 @@ python3 blutter.py /storage/emulated/0/Download/arm64-v8a /storage/emulated/0/Do
 如果处理失败的话，有可能是他检测更新失败了，开梯子就好（毕竟GitHub嘛，是这样的）
 :::
 最后在你新建的那个文件夹里就可以找到你所需要的数据了~
+
+### 特殊情况
+
+有时候啊这个Python3可能用不了，简单，换成Python就行了
+```bash
+pkg install python
+```
+启动的时候也把那个python3替换成python
+具体我也不知道为啥，挺玄学的
