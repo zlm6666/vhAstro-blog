@@ -84,11 +84,14 @@ export default {
   },
   // DNS预解析地址
   DNSOptimization: [
-    'https://i0.wp.com',
-    'https://cn.cravatar.com',
     'https://registry.npmmirror.com',
     'https://pagead2.googlesyndication.com',
-    'https://fenxi.xiaow.qzz.io'
+    'https://fenxi.xiaow.qzz.io',
+    'https://img.tucang.cc',
+    'https://vh-api.4ce.cn',
+    'https://seccdn.libravatar.org',
+    'http://api.xakj02.cn',
+    'https://xiaow.qzz.io'
   ],
   // 博客音乐组件解析接口
   vhMusicApi: 'https://vh-api.4ce.cn/blog/meting',
