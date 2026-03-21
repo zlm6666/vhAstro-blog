@@ -93,4 +93,6 @@ python3 blutter.py /storage/emulated/0/Download/arm64-v8a /storage/emulated/0/Do
 ```
 然后要你非常有耐心的等待，反正就是要特别有耐心
 
+然后就是如果处理失败的话，有可能是他检测更新失败了，开梯子就好（毕竟GitHub嘛，是这样的）
+
 最后在你新建的那个文件夹里就可以找到你所需要的数据了~
