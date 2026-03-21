@@ -149,8 +149,8 @@ export default {
     },
     {
     "name": "JerryGao’s Blog",
-    "link": "http://jerrygao.cn",
-    "avatar": "http://jerrygao.cn/icons/icon-512.png",
+    "link": "http://www.jerrygao.cn",
+    "avatar": "http://www.jerrygao.cn/icons/icon-512.png",
     "descr": "爱折腾的安全小白"
     },
     {
