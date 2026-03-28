@@ -108,7 +108,7 @@ export default {
     {
     "name": "由 · 樂鸢 - 鸢尾之羽，长久思念",
     "link": "https://www.rliy.cn",
-    "avatar": "https://www.rliy.cn/upload/logo.png",
+    "avatar": "https://img.tucang.cc/api/image/show/f9b185faa78f0ea2dad13b77c6c87554",
     "descr": "一个兴趣使然的小站，只为偶尔分享生活的点滴，By：鸢羽rliy_"
     },
     {
