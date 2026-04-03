@@ -96,7 +96,7 @@ export default {
     {
     "name": "酷小呵资源站",
     "link": "https://kuhehe.kuhehe.top",
-    "avatar": "https://bu.dusays.com/2025/01/31/679c9acae2452.webp",
+    "avatar": "https://img.tucang.cc/api/image/show/e898f805009a6a402dfb64043c3f0de7",
     "descr": "每天偶尔分享不错资源"
     },
     {
