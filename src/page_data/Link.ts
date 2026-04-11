@@ -159,5 +159,11 @@ export default {
     "avatar": "https://wp-cdn.4ce.cn/v2/lnZZwdw.jpeg",
     "descr": "内容一般，热爱很满."
     },
+    {
+    "name": "ahyun的爱孤岛",
+    "link": "https://ahyun.org.cn",
+    "avatar": "https://img.tucang.cc/api/image/show/427101ea937fa874b379b9bba16bcd1c",
+    "descr": "问灵十三载,候一不归人"
+    },
   ]
 }
