@@ -150,7 +150,7 @@ export default {
     {
     "name": "JerryGao’s Blog",
     "link": "http://www.jerrygao.cn",
-    "avatar": "http://www.jerrygao.cn/icons/icon-512.png",
+    "avatar": "https://img.tucang.cc/api/image/show/84c310e5420b41dec001fd00d7cb9336",
     "descr": "爱折腾的安全小白"
     },
     {
