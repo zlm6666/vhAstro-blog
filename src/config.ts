@@ -91,7 +91,10 @@ export default {
     'https://vh-api.4ce.cn',
     'https://seccdn.libravatar.org',
     'http://api.xakj02.cn',
-    'https://xiaow.qzz.io'
+    'https://xiaow.qzz.io',
+    'https://waline.xiaow.qzz.io',
+    'https://img1.tucang.cc',
+    'https://blog.xiaow.qzz.io'
   ],
   // 博客音乐组件解析接口
   vhMusicApi: 'https://vh-api.4ce.cn/blog/meting',
