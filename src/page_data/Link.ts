@@ -171,5 +171,11 @@ export default {
     "avatar": "https://img.tucang.cc/api/image/show/08ef7a6fb4cb82cf6461b7c364549878",
     "descr": "≡ω≡ 嗯对，一名普通的职一牲~"
     },
+    {
+    "name": "安泽的温馨小窝",
+    "link": "https://anze.love/",
+    "avatar": "https://anze.love/wp-content/uploads/2026/03/cropped-anze.jpg",
+    "descr": "愿得一人心."
+    },
   ]
 }
