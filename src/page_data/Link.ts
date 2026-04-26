@@ -30,7 +30,7 @@ export default {
     {
     "name": "Web Teleporter",
     "link": "https://webteleporter.top",
-    "avatar": "http://img.magicalapp.cn/api/image/show/928a82921b6c925d7f21c132333881a0",
+    "avatar": "http://img.tucang.cc/api/image/show/928a82921b6c925d7f21c132333881a0",
     "descr": "独立博客传送门"
     },
     {
@@ -72,7 +72,7 @@ export default {
     {
     "name": "速溶理查的博客",
     "link": "https://gateway.xn--sjq13yo4by51ezbkoum.dpdns.org",
-    "avatar": "http://img.magicalapp.cn/api/image/show/c2c18172e1be4662956ba0b47337bbe6",
+    "avatar": "http://img.tucang.cc/api/image/show/c2c18172e1be4662956ba0b47337bbe6",
     "descr": "人与人之间的社交无过于对彼此世界的入侵"
     },
     {
@@ -84,13 +84,13 @@ export default {
     {
     "name": "芹香のblog",
     "link": "https://blog.serikawa.top",
-    "avatar": "http://img.magicalapp.cn/api/image/show/49c9a700bca64cf1a1b9b3709be8bfc8",
+    "avatar": "http://img.tucang.cc/api/image/show/49c9a700bca64cf1a1b9b3709be8bfc8",
     "descr": "芹香のblog，一个游戏站点兼信息技术交流小站，欢迎来玩♡"
     },
     {
     "name": "启动台の小窝",
     "link": "https://launchpadx.top",
-    "avatar": "http://img.magicalapp.cn/api/image/show/91959218fe30b4013543a9b5e7d65abf",
+    "avatar": "http://img.tucang.cc/api/image/show/91959218fe30b4013543a9b5e7d65abf",
     "descr": "用代码改变世界"
     },
     {
@@ -120,7 +120,7 @@ export default {
     {
     "name": "James 的小站",
     "link": "https://nasliangjian.mycloudnas.com:4443",
-    "avatar": "http://img.magicalapp.cn/api/image/show/68e37fe577fa141daab7cc6de8cd7a12",
+    "avatar": "http://img.tucang.cc/api/image/show/68e37fe577fa141daab7cc6de8cd7a12",
     "descr": "一个80后程序猿，兴趣广泛，每样都不精通～"
     },
     {
