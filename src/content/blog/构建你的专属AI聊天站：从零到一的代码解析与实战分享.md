@@ -5,7 +5,7 @@ tags:
   - AI
 id: ai-chat-free
 date: 2026-01-31 19:40:22
-cover: "http://img.magicalapp.cn/api/image/show/8072a2fe5441ecfa9acf43aa598f0183"
+cover: "http://img.tucang.cc/api/image/show/8072a2fe5441ecfa9acf43aa598f0183"
 recommend: true
 ---
 ## 引言
@@ -18,7 +18,7 @@ recommend: true
 ---
 
 ## 截图
-![网页截图](http://img.magicalapp.cn/api/image/show/f778c6eb306ab9fc106e773563ae8eff)
+![网页截图](http://img.tucang.cc/api/image/show/f778c6eb306ab9fc106e773563ae8eff)
 ## 核心功能概览
 ### 1. 多模态交互
 - **文本对话**：支持自然语言处理与上下文关联
