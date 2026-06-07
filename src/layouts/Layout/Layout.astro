@@ -27,36 +27,82 @@ import "./Layout.less";
 ---
 
 <html lang="zh-CN">
-	<Head Title={title} Keywords={keywords} Description={description} PageCover={pagecover}>
-		<!-- 谷歌广告JS加载项 -->
-		{ad_Client && (asideAD_Slot || articleAD_Slot) && <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ad_Client}`} crossorigin="anonymous" />}
-		<!-- 彩旗🎈 -->
-		<script is:inline src="/assets/js/vhCaiqi.js" defer></script>
-		<!-- 设置主题颜色 -->
-		<Fragment
-			set:html={`<style>:root {${Object.entries(Theme)
-				.map(([key, value]) => `${key}:${value};`)
-				.join("")}--vh-main-header-height:${Home ? HomeBanner.HomeHeight : HomeBanner.PageHeight};--vh-home-banner:${HomeBanner.background}}</style>`}
-		/>
-	</Head>
-	<body>
-		<MobileSidebar />
-		<Header activeNav={activeNav} />
-		<main class="main">
-			{HomeBanner.enable && <MainHeader />}
-			<section class="main-inner" style={`padding-top:${HomeBanner.enable ? "0.88rem" : "calc(66px + 0.68rem)"}`}>
-				<section class="main-inner-content">
-					<slot />
-				</section>
-				<Aside />
-			</section>
-			<BackTop />
-		</main>
-		<Footer />
-		<script>
-			import InitFn from "@/scripts/Init";
-			// 全局初始化
-			InitFn();
-		</script>
-	</body>
+  <Head Title={title} Keywords={keywords} Description={description} PageCover={pagecover}>
+    <!-- 谷歌广告JS加载项 -->
+    {ad_Client && (asideAD_Slot || articleAD_Slot) && <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ad_Client}`} crossorigin="anonymous" />}
+    <!-- 彩旗🎈 -->
+    <script is:inline src="/assets/js/vhCaiqi.js" defer></script>
+    <!-- 设置主题颜色 -->
+    <Fragment
+      set:html={`<style>:root {${Object.entries(Theme)
+        .map(([key, value]) => `${key}:${value};`)
+        .join("")}--vh-main-header-height:${Home ? HomeBanner.HomeHeight : HomeBanner.PageHeight};--vh-home-banner:${HomeBanner.background}}</style>`}
+    />
+  </Head>
+  <body>
+    <MobileSidebar />
+    <Header activeNav={activeNav} />
+    <main class="main">
+      {HomeBanner.enable && <MainHeader />}
+      <section class="main-inner" style={`padding-top:${HomeBanner.enable ? "0.88rem" : "calc(66px + 0.68rem)"}`}>
+        <section class="main-inner-content">
+          <slot />
+        </section>
+        <Aside />
+      </section>
+      <BackTop />
+    </main>
+    <Footer />
+    <script>
+      import InitFn from "@/scripts/Init";
+      // 全局初始化
+      InitFn();
+    </script>
+
+    <!-- ✅ 全局锚点偏移修复（Astro + Swup 专用） -->
+    <script is:inline>
+      function fixAnchor() {
+        const hash = location.hash;
+        if (!hash || hash.length <= 1) return;
+
+        const id = hash.slice(1);
+        let tries = 0;
+
+        const timer = setInterval(() => {
+          const el = document.getElementById(id);
+          if (el || ++tries > 40) {
+            clearInterval(timer);
+            if (el) {
+              // ✅ 与 Layout.astro 中的 padding-top 完全一致
+              const headerH = 66 + 0.68 * 16;
+              const top =
+                el.getBoundingClientRect().top +
+                window.scrollY -
+                headerH;
+
+              window.scrollTo({
+                top,
+                behavior: 'smooth'
+              });
+
+              // 高亮反馈
+              el.style.outline = '2px solid rgba(80,120,255,.55)';
+              el.style.outlineOffset = '6px';
+              setTimeout(() => (el.style.outline = ''), 1500);
+            }
+          }
+        }, 200);
+      }
+
+      // ✅ Astro 页面切换后执行（Swup / ViewTransitions）
+      document.addEventListener('astro:after-swap', () => {
+        setTimeout(fixAnchor, 600);
+      });
+
+      // ✅ 首次加载
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(fixAnchor, 600);
+      });
+    </script>
+  </body>
 </html>
